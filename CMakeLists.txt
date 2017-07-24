@@ -2,7 +2,10 @@
 cmake_minimum_required (VERSION 3.7.2)
 project(MinHook C)
 
-set(CMAKE_DEBUG_POSTFIX d)
+set(CMAKE_DEBUG_POSTFIX             "Debug")
+set(CMAKE_RELEASE_POSTFIX           "Release")
+set(CMAKE_RELWITHDEBINFO_POSTFIX    "RelWithDebInfo")
+set(CMAKE_MINSIZEREL_POSTFIX        "MinSizeRel")
 
 set(MINHOOK_FILES 
     include/MinHook.h
