@@ -2,6 +2,7 @@
 cmake_minimum_required (VERSION 3.7.2)
 project(MinHook C)
 
+set(CMAKE_DEBUG_POSTFIX d)
 
 set(MINHOOK_FILES 
     include/MinHook.h
@@ -27,4 +28,6 @@ install(TARGETS MinHookStaticLib
         ARCHIVE DESTINATION lib/static)
 
 install(DIRECTORY include/ DESTINATION include)
+
+
 
